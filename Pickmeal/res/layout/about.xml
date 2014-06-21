@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:layout_marginLeft="5dip">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:paddingLeft="5dip">
+
+		<ImageView android:id="@+id/ImageView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:paddingBottom="15dip" />
+
+
+		<TextView
+			android:text="PickMeal est un projet Open-source créé par deux étudiants ingénieurs"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingBottom="15dip" />
+
+		<TextView android:text="Développeurs:" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingBottom="5dip"
+			android:textSize="16sp" android:textColor="#FFFFFF" />
+
+		<TextView android:text="Clément Bizeau" android:textStyle="bold"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:text="clement.bizeau4@gmail.com"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingBottom="5dip" />
+
+		<TextView android:text="Pierre Lainé" android:textStyle="bold"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:text="pierre.laine2@gmail.com"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingBottom="10dip" />
+
+		<TextView android:text="Remerciements:" android:layout_width="wrap_content"
+			android:textSize="16sp" android:textColor="#FFFFFF"
+			android:layout_height="wrap_content" />
+		<TextView android:text="Douja Fourati, Matthieu Bertrand, Yves Szymezak."
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:paddingTop="10dip" android:layout_height="fill_parent"
+			android:orientation="horizontal">
+			<Button android:id="@+id/Button01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Retour"
+				android:layout_centerHorizontal="true" android:layout_gravity="center" />
+		</FrameLayout>
+
+
+	</LinearLayout>
+
+
+</LinearLayout>

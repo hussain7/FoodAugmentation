@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This file is part of PickMeal. PickMeal is Copyright (C) 2010, 2011
+		Clément BIZEAU, Pierre LAINE PickMeal is free software: you can
+		redistribute it and/or modify it under the terms of the GNU General
+		Public License as published by the Free Software Foundation, either
+		version 3 of the License, or (at your option) any later version.
+
+		PickMeal is distributed in the hope that it will be useful, but
+		WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+		General Public License for more details. You should have received a
+		copy of the GNU General Public License along with PickMeal. If not,
+		see <http://www.gnu.org/licenses/>.
+	-->
+<resources>
+	<string name="app_name">PickMeal</string>
+	<string name="add_item">Ajouter l\'élément</string>
+	<string name="main_no_items">Pas d\'élément</string>
+	<string name="save_pref">Vos préférences ont été enregistrées</string>
+	<string name="rm_pref">Vos préférences ont été effacées</string>
+	<string name="lvl0">VIP chez MacDo</string>
+	<string name="lvl1">Pro du surgelé</string>
+	<string name="lvl2">Apprenti Cuisinier</string>
+	<string name="lvl3">Chef</string>
+	<string name="lvl4">Chef étoilé</string>
+	<string name="money0">Pour pas un sou</string>
+	<string name="money1">Economique</string>
+	<string name="money2">Normal</string>
+	<string name="money3">Raisonable</string>
+	<string name="money4">Grandes occasions</string>
+	<string name="recip_gene">Une liste aléatoire de recette a été générée</string>
+	<string name="recip_erase">La liste de recette a été effacée</string>
+	<string name="menu_delete">Supprimer</string>
+	<string name="select_all">Tout sélectionner</string>
+	<string name="select_none">Tout désélectionner</string>
+	<string name="delete_all">Effacer</string>
+	<string name="nextmeal">Prochain repas</string>
+	<string name="dialog_removeall">Voulez vous vraiment tout effacer?</string>
+	<string name="gene_newone">Générer une nouvelle liste?</string>
+	<string name="gene_btn">Générer</string>
+	<string name="nextmeal_btn">Prochain repas</string>
+	<string name="lvltxt">Niveau</string>
+	<string name="costtxt">Prix</string>
+	<string name="erasetxt">Supprimer</string>
+	<string name="savetxt">Sauvegarder</string>
+	<string name="nbrepas">Nombre de repas (semaine)?</string>
+	<string name="cooklvl">"Niveau de cuisine : "</string>
+	<string name="avgcost">"Prix moyen : "</string>
+	<string name="tastechoice">Choix des goûts</string>
+	<string name="savegpref">Sauvegarder les préférences</string>
+	<string name="tasteconf">Configuration des goûts</string>
+	<string name="addtomlist">Ajouter à la liste des recettes</string>
+	<string name="activity_myrecip">PickMeal - My Recipes</string>
+	<string name="activity_meallist">PickMeal - Meal List</string>
+	<string name="activity_allproducts">PickMeal - type of products</string>
+	<string name="activity_goutselected">PickMeal - list of products</string>
+	<string name="activity_allrecips">PickMeal - list of recipes</string>
+	<string name="activity_recipe">PickMeal - Recipe</string>
+	<string name="activity_shopview">PickMeal - Shop list</string>
+	<string name="actibity_fridgemode">PickMeal - Fridge Mode</string>
+	<string name="activity_random">PickMeal - Random Mode</string>
+	<string name="prod_already_exist">Le produit est déja dans la liste</string>
+	<string name="pick_meal_str">Choisir une recette</string>
+	<string name="prodlist_empty">La liste de produit est vide</string>
+	<string name="no_recipfound">Aucune recette trouvée</string>
+	<string name="btnClearStr">Effacer</string>
+	<string name="btnRecipStr">Recettes</string>
+	<string name="btnOkStr">Ajouter</string>
+	<string name="toast_allcategories">Pour chaques catégories de produit, sélectionnez les produits que vous ne voulez pas retrouver dans vos recettes</string>
+	<string name="toast_fridgemode">Entrez tout les produits dont vous disposez (sans exceptions !) et Pickmeal vous trouvera des recettes</string>
+	<string name="toast_shopview">Appuyer sur générer et Pickmeal vous fournira la liste de course associée aux plats de la semaine</string>
+	<string name="toast_myrecipes">Liste des recettes selon vos goûts</string>
+	<string name="toast_allrecipes">Liste de toutes les recettes</string>
+	<string name="toast_meallist">Génère une liste de recettes pour la semaine</string>
+	<string name="toast_shoplist">Liste de course</string>
+	<string name="back">Retour</string>
+	<string name="save">Sauver</string>
+	<string name="meat">Viandes</string>
+	<string name="fish">Poissons</string>
+	<string name="vegetables">Légumes</string>
+	<string name="fruits">Fruits</string>
+	<string name="drinks">Boissons</string>
+	<string name="milk">Laitages</string>
+	<string name="basis">Base</string>
+	<string name="spices">Epices</string>
+	<string name="others">Autre</string>
+	<string name="notenough">Pas assez de recettes correspondant à vos critères</string>
+	<string name="no_params">Vous n\'avez pas paramétrer le nombre de repas. Veuillez ouvrir les préférences en bas de l\'écran d\'accueil.</string>
+	<string name="only_number">Seulement les nombre sont autorisés pour le nombre de repas</string>
+	<string name="dialog_yes">Oui</string>
+	<string name="dialog_no">Non</string>
+	<string name="fridge_alert">Aucune recette trouvée. Vérifiez que vous avez mit tout vos produits et vérifiez leurs orthographes.</string>
+
+</resources>

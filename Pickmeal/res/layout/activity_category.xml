@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This file is part of PickMeal. PickMeal is Copyright (C) 2010, 2011
+		Clément BIZEAU, Pierre LAINE PickMeal is free software: you can
+		redistribute it and/or modify it under the terms of the GNU General
+		Public License as published by the Free Software Foundation, either
+		version 3 of the License, or (at your option) any later version.
+
+		PickMeal is distributed in the hope that it will be useful, but
+		WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+		General Public License for more details. You should have received a
+		copy of the GNU General Public License along with PickMeal. If not,
+		see <http://www.gnu.org/licenses/>.
+	-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#3F3F3F">
+
+
+	<!-- Set center image + background -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="73dip" android:gravity="center"
+		android:background="@drawable/bgwood">
+		<ImageView android:id="@+id/handle" android:layout_width="wrap_content"
+			android:layout_height="42dip" android:src="@drawable/appname"
+			android:paddingBottom="20dip" android:layout_gravity="center_vertical" />
+	</LinearLayout>
+
+
+	<!-- Button Back -->
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="left" android:paddingTop="10dip" android:paddingLeft="5dip">
+		<Button android:id="@+id/back" android:layout_width="70dip"
+			android:layout_height="30dip" android:text="@string/back"
+			android:textSize="12sp" android:textStyle="bold" android:textColor="#3F3F3F"
+			android:background="@layout/button_wood" />
+	</LinearLayout>
+	
+	
+	<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:stretchColumns="*" android:paddingTop="70dip">
+		<TableRow>
+			<ListView android:id="@android:id/list"
+				android:layout_width="wrap_content" android:textColor="#000000"
+				android:layout_height="wrap_content" />
+		</TableRow>
+	</TableLayout>
+</FrameLayout>

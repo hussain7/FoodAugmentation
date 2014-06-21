@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of PickMeal. PickMeal is Copyright (C) 2010, 2011 
+	Clément BIZEAU, Pierre LAINE PickMeal is free software: you can redistribute 
+	it and/or modify it under the terms of the GNU General Public License as 
+	published by the Free Software Foundation, either version 3 of the License, 
+	or (at your option) any later version. PickMeal is distributed in the hope 
+	that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+	warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+	GNU General Public License for more details. You should have received a copy 
+	of the GNU General Public License along with PickMeal. If not, see <http://www.gnu.org/licenses/>. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#3F3F3F">
+
+
+	<!-- Set center image + backgroud -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="73dip" android:gravity="center"
+		android:background="@drawable/bgwood">
+		<ImageView android:id="@+id/handle" android:layout_width="wrap_content"
+			android:layout_height="42dip" android:src="@drawable/appname"
+			android:paddingBottom="20dip" android:layout_gravity="center_vertical" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="right" android:paddingTop="14dip"
+		android:paddingRight="5dip">
+		<Button android:id="@+id/about" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/about" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center|top" android:paddingTop="70dip">
+		<TableLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_horizontal">
+			<TableRow>
+				<Button android:id="@+id/button1" android:layout_width="83dip"
+					android:layout_height="83dip" android:layout_marginRight="23dp"
+					android:background="@layout/button_sevendays" />
+				<Button android:id="@+id/button2" android:layout_width="83dip"
+					android:layout_height="83dip" android:layout_marginLeft="23dp"
+					android:background="@layout/button_shoplist" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:background="@drawable/border_7days" />
+		<TableLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_horizontal">
+			<TableRow>
+				<Button android:id="@+id/button3" android:layout_width="83dip"
+					android:layout_height="83dip" android:layout_marginRight="23dp"
+					android:background="@layout/button_fridgemode" />
+				<Button android:id="@+id/button4" android:layout_width="83dip"
+					android:layout_height="83dip" android:layout_marginLeft="23dp"
+					android:background="@layout/button_random" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:background="@drawable/border_today" />
+		<TableLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_horizontal">
+			<TableRow>
+				<Button android:id="@+id/button5" android:layout_width="83dip"
+					android:layout_height="83dip" android:layout_marginRight="23dp"
+					android:background="@layout/button_myrecip" />
+				<Button android:id="@+id/button6" android:layout_width="83dip"
+					android:layout_height="83dip" android:layout_marginLeft="23dp"
+					android:background="@layout/button_allrecips" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:background="@drawable/border_recips" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_gravity="bottom"
+		android:background="@drawable/bgbottom" />
+
+
+	<!-- Sliding drawer -->
+	<SlidingDrawer android:id="@+id/drawer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:handle="@+id/handle" android:content="@+id/content"
+		android:orientation="vertical">
+		<ImageView android:id="@+id/handle" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:src="@drawable/slide" />
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:id="@+id/content" android:orientation="vertical"
+			android:gravity="left" android:layout_height="wrap_content">
+
+			<FrameLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<Button android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:background="#3F3F3F" />
+				<LinearLayout android:layout_width="fill_parent"
+					android:orientation="vertical" android:layout_height="wrap_content">
+					<LinearLayout android:layout_width="fill_parent"
+						android:id="@+id/content" android:orientation="vertical"
+						android:layout_height="wrap_content" android:background="@drawable/borderslide" />
+					<LinearLayout android:orientation="vertical"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:paddingLeft="10dip" android:paddingRight="10dip">
+						<!-- textarea + title -->
+						<LinearLayout android:layout_width="wrap_content"
+							android:paddingTop="10dip" android:id="@+id/content"
+							android:orientation="horizontal" android:gravity="left"
+							android:layout_height="wrap_content" android:paddingRight="10dip">
+							<TextView android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:paddingRight="10dip"
+								android:text="@string/nbrepas" android:textSize="16sp" />
+							<EditText android:id="@+id/entry" android:layout_width="40dip"
+								android:layout_height="wrap_content" android:text="0"
+								android:inputType="number" />
+						</LinearLayout>
+
+						<!-- seekbar niveau + title -->
+						<LinearLayout android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:orientation="horizontal">
+							<TextView android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:text="@string/cooklvl"
+								android:paddingTop="10dip" android:textSize="16sp" />
+							<TextView android:id="@+id/progress1"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:paddingTop="10dip" android:textColor="#FFFFFF"
+								android:text="@string/lvl0" android:textSize="16sp" />
+						</LinearLayout>
+					</LinearLayout>
+					<SeekBar android:layout_width="fill_parent"
+						android:layout_below="@+id/seekValue1" android:layout_height="wrap_content"
+						android:id="@+id/SeekBar1" android:max="4" android:paddingTop="10dip"
+						android:soundEffectsEnabled="true" android:paddingLeft="20dip"
+						android:paddingRight="20dip" />
+					<!-- seekbar budget + title -->
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:paddingLeft="10dip" android:paddingRight="10dip">
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/avgcost"
+							android:paddingTop="10dip" android:textSize="16sp" />
+						<TextView android:id="@+id/progress2"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:paddingTop="10dip" android:textColor="#FFFFFF"
+							android:text="@string/money0" android:textSize="16sp" />
+					</LinearLayout>
+					<SeekBar android:layout_width="fill_parent"
+						android:layout_below="@+id/seekValue2" android:layout_height="wrap_content"
+						android:id="@+id/SeekBar2" android:max="4" android:paddingTop="10dip"
+						android:soundEffectsEnabled="true" android:paddingLeft="20dip"
+						android:paddingRight="20dip" />
+
+					<LinearLayout android:layout_width="fill_parent"
+						android:paddingTop="10dip" android:layout_height="wrap_content"
+						android:orientation="vertical" android:paddingLeft="10dip"
+						android:paddingRight="10dip">
+
+						<LinearLayout android:layout_width="fill_parent"
+							android:paddingTop="10dip" android:layout_height="wrap_content">
+							<Button android:id="@+id/button7" android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:text="@string/tasteconf" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</FrameLayout>
+		</LinearLayout>
+	</SlidingDrawer>
+</FrameLayout>
